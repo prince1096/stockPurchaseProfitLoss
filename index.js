@@ -16,6 +16,7 @@ function stockCalculator(initial, quantity, current) {
       showOutput(
         `Hey the loss is ${loss} and the percent is ${lossPercentage}%`
       );
+      output.style.color = "red";
     } else if (current > initial) {
       let gain = (current - initial) * quantity;
       let gainPercentage = (gain / initial) * 100;
@@ -23,6 +24,7 @@ function stockCalculator(initial, quantity, current) {
       showOutput(
         `Hey the gain is ${gain} and the percent is ${gainPercentage}%`
       );
+      output.style.color = "green";
     } else {
       showOutput("Wait for currentPrice to move up and down");
     }
