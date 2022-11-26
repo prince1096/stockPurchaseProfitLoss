@@ -20,12 +20,6 @@ label {
   font-weight: bold;
 }
 
-.container {
-  /* text-align: center; */
-  font-family: sans-serif;
-  /* color: var(--primary-color); */
-}
-
 .index {
   display: block;
   font-size: 20px;
@@ -76,7 +70,6 @@ label {
 
 footer {
   height: 200px;
-  /* background-color: var(--primary-color); */
   padding: 10px;
   margin: 0 35px;
   margin-top: 30px;
@@ -103,8 +96,4 @@ footer {
 
 .project-ul {
   list-style: none;
-}
-
-.low-footer {
-  /* padding-inline-start: 0px; */
 }
