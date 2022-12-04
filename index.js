@@ -7,7 +7,7 @@ const output = document.querySelector(".output");
 button.addEventListener("click", submitHandler);
 
 function stockCalculator(initial, quantity, current) {
-  if (initial > 0 && quantity > 0 && current >= 0) {
+  if (initial > 0 && quantity > 0 && current > 0) {
     if (initial > current) {
       let loss = (initial - current) * quantity;
       let lossPercentage = (loss / initial) * 100;
@@ -29,7 +29,9 @@ function stockCalculator(initial, quantity, current) {
       showOutput("Wait for currentPrice to move up and down");
     }
   } else {
-    showOutput("Fill all Inputs");
+    output.style.color = "red";
+
+    showOutput("Fill all Inputs and Value should be greater than zero");
   }
 }
 
